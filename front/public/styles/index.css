@@ -167,3 +167,16 @@ th {
 td {
   color: #555;
 }
+
+.btn-logout{
+  color: red;
+  border: black;
+  border-radius: 8px;
+  padding: 10px 18px;
+  background-color: white;
+  cursor: pointer;
+}
+.btn-logout:active{
+  background-color: #1c2e3d;
+  transform: scale(0.95);
+}

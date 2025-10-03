@@ -19,16 +19,16 @@ export async function mostrarListarUsuarios() {
       </thead>
       <tbody>
         ${users
-          .map(
-            (user) => `
+        .map(
+          (user) => `
           <tr>
             <td>${user.id_persona}</td>
             <td>${user.username}</td>
             <td>${user.roles.join(", ")}</td>
           </tr>
         `
-          )
-          .join("")}
+        )
+        .join("")}
       </tbody>
     </table>
   `;

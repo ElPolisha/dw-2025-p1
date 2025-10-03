@@ -21,6 +21,10 @@ await fastify.register(fastifyAutoload, {
   routeParams: true,
 });
 
+await fastify.register(fastifyAutoload, {
+  dir: join(rootDir, "services"),
+});
+
 try {
   await fastify.listen({ host, port });
 } catch (err) {
